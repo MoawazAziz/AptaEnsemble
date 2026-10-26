@@ -1,0 +1,6 @@
+design,train_total,train_pos,train_neg,train_pos_ratio,test_total,test_pos,test_neg,test_pos_ratio,test_frac
+pair_level,2402,647,1755,0.2694,601,162,439,0.2696,0.2001
+protein_disjoint,2386,654,1732,0.2741,617,155,462,0.2512,0.2055
+aptamer_disjoint,2365,665,1700,0.2812,638,144,494,0.2257,0.2125
+cluster_disjoint,2376,649,1727,0.2731,627,160,467,0.2552,0.2088
+doubly_disjoint,1324,335,989,0.253,345,109,236,0.3159,0.2067
