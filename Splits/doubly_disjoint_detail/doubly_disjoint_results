@@ -1,0 +1,32 @@
+{
+  "accuracy": 0.3362,
+  "mcc": 0.0226,
+  "roc_auc": 0.4956,
+  "precision": 0.3182,
+  "recall": 0.9633,
+  "specificity": 0.0466,
+  "f1": 0.4784,
+  "tp": 105,
+  "tn": 11,
+  "fp": 225,
+  "fn": 4,
+  "threshold": 0.504,
+  "mcc_ci_lo": -0.0889,
+  "mcc_ci_hi": 0.1095,
+  "auc_ci_lo": 0.4306,
+  "auc_ci_hi": 0.5749,
+  "oof_mcc": 0.843,
+  "n_dev": 1324,
+  "n_test": 345,
+  "verification": {
+    "n_dev": 1324,
+    "n_test": 345,
+    "n_dev_aptamers": 365,
+    "n_dev_proteins": 274,
+    "n_test_aptamers": 136,
+    "n_test_proteins": 108,
+    "leaking_aptamers": 0,
+    "leaking_proteins": 0,
+    "doubly_disjoint_ok": true
+  }
+}
