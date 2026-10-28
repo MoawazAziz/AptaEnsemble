@@ -28,8 +28,6 @@ Random splits — including the M1/M2/M3 design above, which is itself an uncons
 | 4 | Cluster-disjoint | Similarity clusters (cosine ≥ 0.90) disjoint between train and test |
 | 5 | Doubly-disjoint | Neither aptamer nor protein present in training |
 
-**Result.** Test MCC remains strong under pair-level (0.880) and protein-disjoint (0.883) evaluation, but collapses to 0.070 (aptamer-disjoint), −0.032 (cluster-disjoint), and 0.023 (doubly-disjoint) once aptamer entities are held out — all within or near the chance range — even though out-of-fold cross-validation MCC stays at 0.84–0.88 across every design. An entity-memorisation control using no sequence information shows the same pattern, and a label-permutation control confirms the evaluation pipeline itself introduces no artefact. Protein identity carries little memorisable signal; aptamer identity accounts for most of the apparent performance under conventional splits. Full results and methodology: [`splits/README.md`](splits/README.md).
-
 ```bash
 python build_entity_disjoint_splits.py --data clean.csv --out splits/
 python doubly_disjoint_analysis.py --data clean.csv --out splits/doubly_disjoint_detail
