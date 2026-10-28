@@ -81,7 +81,7 @@ def load_data():
         "test": os.path.join(DATA_DIR, "test.csv"),
         "M1": os.path.join(DATA_DIR, "M1.csv"),
         "M2": os.path.join(DATA_DIR, "M2.csv"),
-        "M3": os.path.join(DATA_DIR, "M3.csv")
+        "M3": os.path.join(DATA_DIR, "pair-level held-out.csv")
     }
     for name, path in paths.items():
         if not os.path.exists(path):
