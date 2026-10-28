@@ -22,7 +22,7 @@ Random splits — including the M1/M2/M3 design above, which is itself an uncons
 
 | # | Design | Entity control |
 |---|--------|-----------------|
-| 1 | Pair-level (random) | None (baseline; statistically equivalent to the M1/M2/M3 cohort design above) |
+| 1 | Pair-level (random) | None (baseline; statistically equivalent to the M1/M2/pair-level holdout cohort design above) |
 | 2 | Protein-disjoint | Test proteins absent from training |
 | 3 | Aptamer-disjoint | Test aptamers absent from training |
 | 4 | Cluster-disjoint | Similarity clusters (cosine ≥ 0.90) disjoint between train and test |
