@@ -10,7 +10,7 @@ This repository contains the complete, reproducible source code, data processing
 
 ### 🌟 Key Features
 
-- **Strict Leakage-Controlled Validation**: Implements a rigorous M1/M2/M3 cohort hierarchy with out-of-fold (OOF) threshold optimization to prevent data leakage.
+- **Strict Leakage-Controlled Validation**: Implements a rigorous M1/M2/pair-level holdout cohort hierarchy with out-of-fold (OOF) threshold optimization to prevent data leakage.
 - **Comprehensive Model Panel**: Evaluates ExtraTrees, RandomForest, XGBoost, LightGBM, MLPs, CNN1D, Stacking Ensembles, and 15 ML-DL Hybrid configurations.
 - **Pretrained Transformer Ablation**: Benchmarks engineered descriptors against frozen DNABERT6 (aptamer) and ProtBERT (protein) concatenated embeddings.
 - **Imbalance-Robust Metrics**: Optimizes and reports Matthews Correlation Coefficient (MCC), PR-AUC, and Balanced Accuracy alongside standard metrics.
@@ -18,7 +18,7 @@ This repository contains the complete, reproducible source code, data processing
 
 ## 🔒 Entity-Disjoint Validation Framework
 
-Random splits — including the M1/M2/M3 design above, which is itself an unconstrained stratified split — can allow the same aptamer or protein entity to appear in both training and test, inflating apparent performance through entity memorisation rather than genuine sequence-interaction learning. To quantify this directly, the repository includes a five-design validation framework (`splits/`):
+Random splits — including the M1/M2/pair-level holdout cohort design above, which is itself an unconstrained stratified split — can allow the same aptamer or protein entity to appear in both training and test, inflating apparent performance through entity memorisation rather than genuine sequence-interaction learning. To quantify this directly, the repository includes a five-design validation framework (`splits/`):
 
 | # | Design | Entity control |
 |---|--------|-----------------|
