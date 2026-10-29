@@ -1,0 +1,322 @@
+{
+  "pair-level": {
+    "source_dev": "/mnt/data/repo_audit/AptaEnsemble-main/M1.csv",
+    "source_test": "/mnt/data/repo_audit/AptaEnsemble-main/M3.csv",
+    "model": "ExtraTrees 500, entropy, sqrt, balanced, seed42",
+    "feature_set": "full640",
+    "n_features": 640,
+    "threshold_selection": "5-fold development pair-exclusion CV",
+    "oof_n": 2402,
+    "oof_mcc": 0.8593493828999944,
+    "threshold": 0.455,
+    "folds": [
+      {
+        "fold": 0,
+        "n_train": 1921,
+        "n_validation": 481,
+        "n_validation_positive": 130
+      },
+      {
+        "fold": 1,
+        "n_train": 1921,
+        "n_validation": 481,
+        "n_validation_positive": 130
+      },
+      {
+        "fold": 2,
+        "n_train": 1922,
+        "n_validation": 480,
+        "n_validation_positive": 129
+      },
+      {
+        "fold": 3,
+        "n_train": 1922,
+        "n_validation": 480,
+        "n_validation_positive": 129
+      },
+      {
+        "fold": 4,
+        "n_train": 1922,
+        "n_validation": 480,
+        "n_validation_positive": 129
+      }
+    ],
+    "training_n": 2402,
+    "test_n": 601,
+    "test_metrics": {
+      "n": 601,
+      "positives": 162,
+      "negatives": 439,
+      "threshold": 0.455,
+      "accuracy": 0.9500831946755408,
+      "precision": 0.9714285714285714,
+      "recall": 0.8395061728395061,
+      "mcc": 0.8716854159513134,
+      "f1": 0.9006622516556292,
+      "roc_auc": 0.9495345763379173,
+      "pr_auc": 0.9256261847036904,
+      "tn": 435,
+      "fp": 4,
+      "fn": 26,
+      "tp": 136
+    },
+    "elapsed_seconds": 8.71
+  },
+  "protein-disjoint": {
+    "source_dev": "/mnt/data/repo_audit/AptaEnsemble-main/Splits/protein_disjoint_train.csv",
+    "source_test": "/mnt/data/repo_audit/AptaEnsemble-main/Splits/protein_disjoint_test.csv",
+    "model": "ExtraTrees 500, entropy, sqrt, balanced, seed42",
+    "feature_set": "aptamer340_AAC120",
+    "n_features": 460,
+    "threshold_selection": "5-fold development protein-exclusion CV",
+    "oof_n": 2386,
+    "oof_mcc": 0.7971447011388262,
+    "threshold": 0.495,
+    "folds": [
+      {
+        "fold": 0,
+        "n_train": 1908,
+        "n_validation": 478,
+        "n_validation_positive": 133
+      },
+      {
+        "fold": 1,
+        "n_train": 1909,
+        "n_validation": 477,
+        "n_validation_positive": 134
+      },
+      {
+        "fold": 2,
+        "n_train": 1909,
+        "n_validation": 477,
+        "n_validation_positive": 132
+      },
+      {
+        "fold": 3,
+        "n_train": 1909,
+        "n_validation": 477,
+        "n_validation_positive": 131
+      },
+      {
+        "fold": 4,
+        "n_train": 1909,
+        "n_validation": 477,
+        "n_validation_positive": 124
+      }
+    ],
+    "training_n": 2386,
+    "test_n": 617,
+    "test_metrics": {
+      "n": 617,
+      "positives": 155,
+      "negatives": 462,
+      "threshold": 0.495,
+      "accuracy": 0.9529983792544571,
+      "precision": 0.9846153846153847,
+      "recall": 0.8258064516129032,
+      "mcc": 0.8736677907123717,
+      "f1": 0.8982456140350877,
+      "roc_auc": 0.9573243960340735,
+      "pr_auc": 0.9384971210729339,
+      "tn": 460,
+      "fp": 2,
+      "fn": 27,
+      "tp": 128
+    },
+    "elapsed_seconds": 7.8
+  },
+  "aptamer-disjoint": {
+    "source_dev": "/mnt/data/repo_audit/AptaEnsemble-main/Splits/aptamer_disjoint_train.csv",
+    "source_test": "/mnt/data/repo_audit/AptaEnsemble-main/Splits/aptamer_disjoint_test.csv",
+    "model": "ExtraTrees 500, entropy, sqrt, balanced, seed42",
+    "feature_set": "compact184",
+    "n_features": 184,
+    "threshold_selection": "5-fold development aptamer-exclusion CV",
+    "oof_n": 2365,
+    "oof_mcc": 0.4335616158231267,
+    "threshold": 0.725,
+    "folds": [
+      {
+        "fold": 0,
+        "n_train": 1892,
+        "n_validation": 473,
+        "n_validation_positive": 132
+      },
+      {
+        "fold": 1,
+        "n_train": 1892,
+        "n_validation": 473,
+        "n_validation_positive": 132
+      },
+      {
+        "fold": 2,
+        "n_train": 1892,
+        "n_validation": 473,
+        "n_validation_positive": 135
+      },
+      {
+        "fold": 3,
+        "n_train": 1892,
+        "n_validation": 473,
+        "n_validation_positive": 136
+      },
+      {
+        "fold": 4,
+        "n_train": 1892,
+        "n_validation": 473,
+        "n_validation_positive": 130
+      }
+    ],
+    "training_n": 2365,
+    "test_n": 638,
+    "test_metrics": {
+      "n": 638,
+      "positives": 144,
+      "negatives": 494,
+      "threshold": 0.725,
+      "accuracy": 0.8495297805642633,
+      "precision": 0.8636363636363636,
+      "recall": 0.3958333333333333,
+      "mcc": 0.5183506435821854,
+      "f1": 0.5428571428571428,
+      "roc_auc": 0.7125154633378317,
+      "pr_auc": 0.6239860346455879,
+      "tn": 485,
+      "fp": 9,
+      "fn": 87,
+      "tp": 57
+    },
+    "elapsed_seconds": 6.36
+  },
+  "cluster-disjoint-FIXED": {
+    "source_dev": "/mnt/data/AptaEnsemble_Reproducibility_Fix_2026-10-29/cluster_disjoint_FIXED_train.csv",
+    "source_test": "/mnt/data/AptaEnsemble_Reproducibility_Fix_2026-10-29/cluster_disjoint_FIXED_test.csv",
+    "model": "ExtraTrees 500, entropy, sqrt, balanced, seed42",
+    "feature_set": "compact184",
+    "n_features": 184,
+    "threshold_selection": "5-fold development cluster-exclusion CV",
+    "oof_n": 2403,
+    "oof_mcc": 0.3621441664129629,
+    "threshold": 0.755,
+    "folds": [
+      {
+        "fold": 0,
+        "n_train": 1922,
+        "n_validation": 481,
+        "n_validation_positive": 132
+      },
+      {
+        "fold": 1,
+        "n_train": 1922,
+        "n_validation": 481,
+        "n_validation_positive": 134
+      },
+      {
+        "fold": 2,
+        "n_train": 1922,
+        "n_validation": 481,
+        "n_validation_positive": 122
+      },
+      {
+        "fold": 3,
+        "n_train": 1923,
+        "n_validation": 480,
+        "n_validation_positive": 134
+      },
+      {
+        "fold": 4,
+        "n_train": 1923,
+        "n_validation": 480,
+        "n_validation_positive": 125
+      }
+    ],
+    "training_n": 2403,
+    "test_n": 600,
+    "test_metrics": {
+      "n": 600,
+      "positives": 162,
+      "negatives": 438,
+      "threshold": 0.755,
+      "accuracy": 0.785,
+      "precision": 0.9714285714285714,
+      "recall": 0.20987654320987653,
+      "mcc": 0.39323298340961016,
+      "f1": 0.34517766497461927,
+      "roc_auc": 0.7558486949658944,
+      "pr_auc": 0.6504472553002667,
+      "tn": 437,
+      "fp": 1,
+      "fn": 128,
+      "tp": 34
+    },
+    "elapsed_seconds": 5.66
+  },
+  "doubly-disjoint-released": {
+    "source_dev": "/mnt/data/repo_audit/AptaEnsemble-main/Splits/doubly_disjoint_train.csv",
+    "source_test": "/mnt/data/repo_audit/AptaEnsemble-main/Splits/doubly_disjoint_test.csv",
+    "model": "ExtraTrees 500, entropy, sqrt, balanced, seed42",
+    "feature_set": "compact184",
+    "n_features": 184,
+    "threshold_selection": "5-fold development double-exclusion CV",
+    "oof_n": 262,
+    "oof_mcc": 0.1374699587344438,
+    "threshold": 0.59,
+    "folds": [
+      {
+        "fold": 0,
+        "development": 825,
+        "validation": 55,
+        "positive_validation": 14,
+        "positive_development": 200
+      },
+      {
+        "fold": 1,
+        "development": 858,
+        "validation": 51,
+        "positive_validation": 10,
+        "positive_development": 235
+      },
+      {
+        "fold": 2,
+        "development": 892,
+        "validation": 56,
+        "positive_validation": 19,
+        "positive_development": 203
+      },
+      {
+        "fold": 3,
+        "development": 850,
+        "validation": 44,
+        "positive_validation": 8,
+        "positive_development": 218
+      },
+      {
+        "fold": 4,
+        "development": 809,
+        "validation": 56,
+        "positive_validation": 8,
+        "positive_development": 208
+      }
+    ],
+    "training_n": 1324,
+    "test_n": 345,
+    "test_metrics": {
+      "n": 345,
+      "positives": 109,
+      "negatives": 236,
+      "threshold": 0.59,
+      "accuracy": 0.6463768115942029,
+      "precision": 0.42528735632183906,
+      "recall": 0.3394495412844037,
+      "mcc": 0.13658400618012065,
+      "f1": 0.37755102040816324,
+      "roc_auc": 0.6019670346757893,
+      "pr_auc": 0.48729507526722293,
+      "tn": 186,
+      "fp": 50,
+      "fn": 72,
+      "tp": 37
+    },
+    "elapsed_seconds": 4.51
+  }
+}

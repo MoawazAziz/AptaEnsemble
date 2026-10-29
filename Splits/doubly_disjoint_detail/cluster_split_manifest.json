@@ -1,0 +1,15 @@
+{
+  "source_rows": 3003,
+  "clusters": 718,
+  "unique_aptamer_profiles": 803,
+  "clusters_in_test": 145,
+  "selected_stratified_group_fold": 0,
+  "train_rows": 2403,
+  "test_rows": 600,
+  "train_positive": 647,
+  "test_positive": 162,
+  "cross_partition_cluster_overlap": 0,
+  "threshold": 0.9,
+  "seed": 42,
+  "test_fraction_requested": 0.2
+}

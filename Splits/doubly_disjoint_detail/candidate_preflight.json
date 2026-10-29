@@ -1,0 +1,56 @@
+{
+  "source": "candidate_ranking.py from ZIP",
+  "candidate_libs_present_in_zip": {
+    "CT-20(2).txt": false,
+    "DK-30(2).txt": false,
+    "BC-6(2).txt": false
+  },
+  "referenced_training_file_present": false,
+  "usable_original_train": true,
+  "group_definitions": {
+    "A": [
+      "hydro",
+      "volume",
+      "charge"
+    ],
+    "B": [
+      "volume",
+      "helix",
+      "sheet"
+    ],
+    "C": [
+      "charge",
+      "flex",
+      "hydro"
+    ],
+    "D": [
+      "helix",
+      "sheet",
+      "flex"
+    ],
+    "E": [
+      "hydro",
+      "helix",
+      "volume"
+    ],
+    "F": [
+      "charge",
+      "sheet",
+      "flex"
+    ]
+  },
+  "literal_weights_in_code": [
+    0.05,
+    0.15
+  ],
+  "inherited_protein_matrix_negative_fraction": 0.5532084374132668,
+  "source_protein_feature_columns": 300,
+  "critical_findings": [
+    "Raw CTGF, DKK1, BCMA sequence library files are absent from ZIP.",
+    "Hardcoded train(3).csv is absent; M1.csv exists, but swapping paths does not fix feature incompatibility.",
+    "Candidate GROUPS and omega differ from documented AptaNet-derived precomputed protein representation.",
+    "Original AptaNet encoded dataset contains negative values, while direct composition and squared-correlation formulas yield nonnegative descriptors.",
+    "Cannot certify candidate scores without a validated FASTA-to-trained-feature preprocessing transform."
+  ],
+  "candidate_scores_recalculated": false
+}

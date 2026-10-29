@@ -1,0 +1,160 @@
+{
+  "pair_level": {
+    "status": "independent reproduced endpoint",
+    "description": "full640 model 500 entropy sqrt balanced, reported pair-level fixed threshold",
+    "features": 640,
+    "train_rows": 2402,
+    "test_rows": 601,
+    "threshold_optimization": null,
+    "test_metrics": {
+      "n": 601,
+      "positives": 162,
+      "negatives": 439,
+      "threshold": 0.455,
+      "accuracy": 0.9500831946755408,
+      "precision": 0.9714285714285714,
+      "recall": 0.8395061728395061,
+      "mcc": 0.8716854159513134,
+      "f1": 0.9006622516556292,
+      "roc_auc": 0.9495345763379173,
+      "pr_auc": 0.9256261847036904,
+      "tn": 435,
+      "fp": 4,
+      "fn": 26,
+      "tp": 136
+    },
+    "elapsed_seconds": 1.54
+  },
+  "released_doubly_disjoint": {
+    "status": "new diagnostic result",
+    "description": "compact184 model 500 entropy sqrt balanced, blocked development-only CV",
+    "features": 184,
+    "train_rows": 1324,
+    "test_rows": 345,
+    "threshold_optimization": {
+      "oof_n": 262,
+      "oof_mcc": 0.1374699587344438,
+      "folds": [
+        {
+          "fold": 0,
+          "development": 825,
+          "validation": 55,
+          "positive_validation": 14,
+          "positive_development": 200
+        },
+        {
+          "fold": 1,
+          "development": 858,
+          "validation": 51,
+          "positive_validation": 10,
+          "positive_development": 235
+        },
+        {
+          "fold": 2,
+          "development": 892,
+          "validation": 56,
+          "positive_validation": 19,
+          "positive_development": 203
+        },
+        {
+          "fold": 3,
+          "development": 850,
+          "validation": 44,
+          "positive_validation": 8,
+          "positive_development": 218
+        },
+        {
+          "fold": 4,
+          "development": 809,
+          "validation": 56,
+          "positive_validation": 8,
+          "positive_development": 208
+        }
+      ]
+    },
+    "test_metrics": {
+      "n": 345,
+      "positives": 109,
+      "negatives": 236,
+      "threshold": 0.59,
+      "accuracy": 0.6463768115942029,
+      "precision": 0.42528735632183906,
+      "recall": 0.3394495412844037,
+      "mcc": 0.13658400618012065,
+      "f1": 0.37755102040816324,
+      "roc_auc": 0.6019670346757893,
+      "pr_auc": 0.48729507526722293,
+      "tn": 186,
+      "fp": 50,
+      "fn": 72,
+      "tp": 37
+    },
+    "elapsed_seconds": 4.46
+  },
+  "corrected_cluster_disjoint": {
+    "status": "new diagnostic result",
+    "description": "compact184 model 500 entropy sqrt balanced, blocked development-only CV",
+    "features": 184,
+    "train_rows": 2403,
+    "test_rows": 600,
+    "threshold_optimization": {
+      "oof_n": 2403,
+      "oof_mcc": 0.3621441664129629,
+      "folds": [
+        {
+          "fold": 0,
+          "development": 1922,
+          "validation": 481,
+          "positive_validation": 132,
+          "positive_development": 515
+        },
+        {
+          "fold": 1,
+          "development": 1922,
+          "validation": 481,
+          "positive_validation": 134,
+          "positive_development": 513
+        },
+        {
+          "fold": 2,
+          "development": 1922,
+          "validation": 481,
+          "positive_validation": 122,
+          "positive_development": 525
+        },
+        {
+          "fold": 3,
+          "development": 1923,
+          "validation": 480,
+          "positive_validation": 134,
+          "positive_development": 513
+        },
+        {
+          "fold": 4,
+          "development": 1923,
+          "validation": 480,
+          "positive_validation": 125,
+          "positive_development": 522
+        }
+      ]
+    },
+    "test_metrics": {
+      "n": 600,
+      "positives": 162,
+      "negatives": 438,
+      "threshold": 0.755,
+      "accuracy": 0.785,
+      "precision": 0.9714285714285714,
+      "recall": 0.20987654320987653,
+      "mcc": 0.39323298340961016,
+      "f1": 0.34517766497461927,
+      "roc_auc": 0.7558486949658944,
+      "pr_auc": 0.6504472553002667,
+      "tn": 437,
+      "fp": 1,
+      "fn": 128,
+      "tp": 34
+    },
+    "elapsed_seconds": 5.67
+  }
+}

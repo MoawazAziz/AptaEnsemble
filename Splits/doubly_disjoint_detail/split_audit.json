@@ -1,0 +1,59 @@
+{
+  "n": 3003,
+  "positive": 809,
+  "negative": 2194,
+  "n_aptamer_profiles": 803,
+  "n_protein_profiles": 508,
+  "bipartite_connected_components": 90,
+  "largest_component_pairs": 2879,
+  "3mer_cosine_threshold": 0.9,
+  "3mer_true_single_linkage_clusters": 718,
+  "largest_3mer_cluster_size": 8,
+  "splits": {
+    "pair_level": {
+      "train_n": 2402,
+      "test_n": 601,
+      "train_pos": 647,
+      "test_pos": 162,
+      "aptamer_overlap": 122,
+      "protein_overlap": 177,
+      "true_3mer_single_linkage_cluster_overlap": 135
+    },
+    "protein_disjoint": {
+      "train_n": 2386,
+      "test_n": 617,
+      "train_pos": 654,
+      "test_pos": 155,
+      "aptamer_overlap": 116,
+      "protein_overlap": 0,
+      "true_3mer_single_linkage_cluster_overlap": 115
+    },
+    "aptamer_disjoint": {
+      "train_n": 2365,
+      "test_n": 638,
+      "train_pos": 665,
+      "test_pos": 144,
+      "aptamer_overlap": 0,
+      "protein_overlap": 175,
+      "true_3mer_single_linkage_cluster_overlap": 16
+    },
+    "cluster_disjoint": {
+      "train_n": 2376,
+      "test_n": 627,
+      "train_pos": 649,
+      "test_pos": 160,
+      "aptamer_overlap": 0,
+      "protein_overlap": 183,
+      "true_3mer_single_linkage_cluster_overlap": 9
+    },
+    "doubly_disjoint": {
+      "train_n": 1324,
+      "test_n": 345,
+      "train_pos": 335,
+      "test_pos": 109,
+      "aptamer_overlap": 0,
+      "protein_overlap": 0,
+      "true_3mer_single_linkage_cluster_overlap": 6
+    }
+  }
+}
